@@ -1,0 +1,14 @@
+[Unit]
+Description=Project Sovereign - Private AI Edge Gateway Core
+After=network.target mosquitto.service
+
+[Service]
+Type=simple
+User=lhx
+WorkingDirectory=/home/lhx/MyEdgeAI-Gateway
+ExecStart=/usr/bin/python3 /home/lhx/MyEdgeAI-Gateway/ai_mqtt_controller.py
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
