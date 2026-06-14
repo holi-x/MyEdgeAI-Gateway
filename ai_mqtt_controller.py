@@ -4,8 +4,8 @@ import time
 import datetime
 import paho.mqtt.client as mqtt
 
-# MQTT Setup
-client = mqtt.Client("edge_ai_brain")
+# MQTT Setup for paho-mqtt 2.x
+client = mqtt.Client(mqtt.CallbackAPIVersion.VERSION2, "edge_ai_brain")
 client.connect("localhost", 1883, 60)
 client.loop_start()
 
