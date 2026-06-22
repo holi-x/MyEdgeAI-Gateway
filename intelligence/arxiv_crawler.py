@@ -41,7 +41,7 @@ Output ONLY the JSON. No other text."""
 while True:
     print(f"[{datetime.now()}] Fetching latest AI papers...")
     papers = fetch_latest_papers()
-    
+
     for paper in papers:
         analysis = analyze_paper(paper)
         record = {
@@ -49,11 +49,11 @@ while True:
             "paper": paper,
             "ai_analysis": analysis
         }
-        
+
         with open("/home/lhx/MyEdgeAI-Gateway/intelligence/intel_log.jsonl", "a") as f:
             f.write(json.dumps(record, ensure_ascii=False) + "\n")
-        
+
         print(f"Analyzed: {paper['title'][:80]}...")
-    
+
     print("Waiting 1 hour before next fetch...")
     time.sleep(3600)
