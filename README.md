@@ -1,31 +1,90 @@
-# Project Sovereign: My Private AI Edge Gateway
-This is not just code. This is the foundation of my personal AI sovereignty. 
-All data is processed locally. All decisions are auditable. Zero cloud dependency.
-## Core Principle
-I do not use AI. I define the rules under which AI interacts with the physical world. 
-Every decision my AI makes is a quantifiable asset that belongs only to me.
-## First Milestone (Today)
-My edge AI (qwen3:4b) successfully completed its first autonomous physical decision loop. 
-It analyzed a temperature input and generated a control command ("too hot" / "turn on fan") via MQTT. 
-This is the first heartbeat of my sovereign system.
----
+# Project Sovereign: Private AI Sovereignty System
 
-## Services & Consulting
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen)]()
+[![Roadmap: 10 Years](https://img.shields.io/badge/Roadmap-10_Years-blue)]()
 
-I help individuals and small businesses achieve AI sovereignty.
-
-**Private AI Deployment Consultation**
-- One-on-one session to audit your setup and design a fully offline AI pipeline.
-- You get: A personalized deployment plan + follow-up audit.
-- **Fee: $99/session** (Limited to 5 clients per month).
-
-**Custom Audit Reports**
-- Need verifiable proof that your AI system is safe, private, and compliant?
-- I produce detailed, human-readable audit reports for edge AI systems.
-- **Fee: Starting at $199/report**.
-
-**Interested?**
-Open an issue titled `[Consultation]` in this repository, or contact me at15378920125@163.com
+**Not just using AI. Defining the rules under which AI interacts with the physical world.**
 
 ---
-*All services are provided with full confidentiality. Your data never leaves your machine.*
+
+## What is Project Sovereign?
+
+A fully private, offline, auditable edge AI system that controls real devices via MQTT, with a complete evidence chain for every decision. All data stays local. Zero cloud dependency. Absolute AI sovereignty.
+
+**Key Differentiator:** Every AI decision is recorded with full traceability — from sensor input through reasoning to final action. This is the foundation for trusted AI in healthcare, finance, legal, and beyond.
+
+---
+
+## System Architecture
+
+```
+
+┌─────────────────────────────────────────────────────┐
+│                  SOVEREIGN CORE                      │
+│              (Central Nervous System)                │
+└──────┬──────┬──────┬──────┬──────┬─────────────────┘
+│      │      │      │      │
+▼      ▼      ▼      ▼      ▼
+┌─────┐┌─────┐┌─────┐┌─────┐┌─────────────┐
+│ Eye ││Brain││Hand ││Evol ││ Constitution │
+│     ││     ││     ││     ││             │
+│ArXiv││ChrDB││MQTT ││Auto ││ SPEC.md    │
+│Paper││Knowl││Contr││Rule ││ Audit Logs │
+│Fetch││Base ││oller││Gen  ││ Token Assets│
+└─────┘└─────┘└─────┘└─────┘└─────────────┘
+
+```
+
+| Module | Function | Status |
+|--------|----------|--------|
+| **Sovereign Core** | Central orchestrator for all modules | ✅ Active |
+| **Eye (Intelligence)** | ArXiv paper crawler + AI analysis | ✅ Active |
+| **Brain (Memory)** | ChromaDB knowledge base with RAG | ✅ Active |
+| **Hand (Control)** | MQTT-based physical device control | ✅ Active |
+| **Evolution Engine** | Auto-generates rule updates from new knowledge | ✅ Active |
+| **Constitution** | AI-Physical Interaction Protocol (APIP) v0.1 | ✅ Published |
+| **Audit System** | Complete decision traceability | ✅ Verified |
+
+---
+
+## Quick Start
+
+```bash
+git clone https://github.com/holi-x/MyEdgeAI-Gateway.git
+cd MyEdgeAI-Gateway
+pip install -r requirements.txt
+python3 sovereign_core.py
+```
+
+---
+
+Why This Matters
+
+· Healthcare: AI diagnoses without leaking patient data.
+· Finance: Trading algorithms with full audit trails.
+· Legal: AI-generated documents with verifiable provenance.
+· Smart Homes: Physical AI that respects your privacy.
+
+---
+
+Consulting Services
+
+I help organizations achieve AI sovereignty.
+
+· Private AI Deployment Audit: $99/session
+· Custom AI Audit Reports: Starting at $199/report
+
+Open an issue titled [Consultation] to get started.
+
+---
+
+Roadmap
+
+See ROADMAP.md for the 10-year vision.
+
+---
+
+Built by 刘泓孝, a human who defines the rules AI must follow.
+
+```
