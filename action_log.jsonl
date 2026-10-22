@@ -1,0 +1,1 @@
+{"timestamp": "2026-10-22T20:37:45.987246", "ai_command": {"device": "fan", "action": "on", "reason": "too hot"}, "human_equivalent": {"action_type": "manual_control", "target_device": "fan", "estimated_duration_ms": 1718, "joint_angles": [82.1, 162.6, 178.6, 81.7, 87.5, 14.3], "grip_force": 1.7}, "training_label": "human_demonstration"}
