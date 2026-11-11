@@ -1,90 +1,76 @@
-# Project Sovereign: Private AI Sovereignty System
+# 🛡️ Project Sovereign: Private AI Edge Gateway
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen)]()
-[![Roadmap: 10 Years](https://img.shields.io/badge/Roadmap-10_Years-blue)]()
+![Status](https://img.shields.io/badge/Status-Active-brightgreen)
+![Python](https://img.shields.io/badge/Python-3.14-blue)
+![AI](https://img.shields.io/badge/AI-Qwen_2.5_7B-purple)
+![License](https://img.shields.io/badge/License-MIT-yellow)
 
 **Not just using AI. Defining the rules under which AI interacts with the physical world.**
 
----
-
-## What is Project Sovereign?
-
-A fully private, offline, auditable edge AI system that controls real devices via MQTT, with a complete evidence chain for every decision. All data stays local. Zero cloud dependency. Absolute AI sovereignty.
-
-**Key Differentiator:** Every AI decision is recorded with full traceability — from sensor input through reasoning to final action. This is the foundation for trusted AI in healthcare, finance, legal, and beyond.
+Project Sovereign is a fully private, offline, and auditable edge AI system that controls physical devices via local LLMs. Designed for the next generation of Embodied AI and trusted automation, it ensures **zero cloud dependency** and **100% decision traceability**.
 
 ---
 
-## System Architecture
+## 🚀 Core Features (Why this matters)
 
-```
-
-┌─────────────────────────────────────────────────────┐
-│                  SOVEREIGN CORE                      │
-│              (Central Nervous System)                │
-└──────┬──────┬──────┬──────┬──────┬─────────────────┘
-│      │      │      │      │
-▼      ▼      ▼      ▼      ▼
-┌─────┐┌─────┐┌─────┐┌─────┐┌─────────────┐
-│ Eye ││Brain││Hand ││Evol ││ Constitution │
-│     ││     ││     ││     ││             │
-│ArXiv││ChrDB││MQTT ││Auto ││ SPEC.md    │
-│Paper││Knowl││Contr││Rule ││ Audit Logs │
-│Fetch││Base ││oller││Gen  ││ Token Assets│
-└─────┘└─────┘└─────┘└─────┘└─────────────┘
-
-```
-
-| Module | Function | Status |
-|--------|----------|--------|
-| **Sovereign Core** | Central orchestrator for all modules | ✅ Active |
-| **Eye (Intelligence)** | ArXiv paper crawler + AI analysis | ✅ Active |
-| **Brain (Memory)** | ChromaDB knowledge base with RAG | ✅ Active |
-| **Hand (Control)** | MQTT-based physical device control | ✅ Active |
-| **Evolution Engine** | Auto-generates rule updates from new knowledge | ✅ Active |
-| **Constitution** | AI-Physical Interaction Protocol (APIP) v0.1 | ✅ Published |
-| **Audit System** | Complete decision traceability | ✅ Verified |
+*   **Absolute Privacy**: All data (sensor inputs, AI reasoning) is processed locally. No data leaks to OpenAI or any cloud API.
+*   **Auditable Decision Pipeline**: Every AI command generates a human-readable JSON log with a complete evidence chain.
+*   **Embodied AI Data Generator**: Automatically converts AI decisions into human-equivalent physical movement data (joint angles, duration, grip force), ready for robotics training.
+*   **Automated Analytics**: Built-in report generator to quantify system performance and AI safety.
 
 ---
 
-## Quick Start
+## 🏗️ System Architecture
 
-```bash
+```text
+[Physical Sensor] -> (Temperature Data)
+       │
+       ▼
+[Local LLM Engine] -> (Qwen 2.5:7b) -> Analyzes data & outputs strict JSON
+       │
+       ▼
+[Action Dispatcher] -> Interprets JSON (e.g., {"device":"fan", "action":"on"})
+       │
+       ├──> [Embodied Data Pipeline] -> Generates action_log.jsonl (Training Data)
+       │
+       └──> [Analytics Engine] -> Generates ACTION_REPORT.md (Audit & Metrics)
+       📊 Live System Metrics
+ 
+Check out the auto-generated ACTION_REPORT.md to see the latest system performance.
+• Total Auditable AI Decisions: Accumulating in real-time
+• Human-Equivalent Action Mapping: Active
+• Data Privacy Level: Air-gapped / Offline 
+ 
+💻 Quick Start
+ 
+Prerequisites
+• Python 3.10+
+• Ollama installed and running locally. 
+1. Install Dependencies
 git clone https://github.com/holi-x/MyEdgeAI-Gateway.git
 cd MyEdgeAI-Gateway
-pip install -r requirements.txt
-python3 sovereign_core.py
-```
-
----
-
-Why This Matters
-
-· Healthcare: AI diagnoses without leaking patient data.
-· Finance: Trading algorithms with full audit trails.
-· Legal: AI-generated documents with verifiable provenance.
-· Smart Homes: Physical AI that respects your privacy.
-
----
-
-Consulting Services
-
-I help organizations achieve AI sovereignty.
-
-· Private AI Deployment Audit: $99/session
-· Custom AI Audit Reports: Starting at $199/report
-
-Open an issue titled [Consultation] to get started.
-
----
-
-Roadmap
-
-See ROADMAP.md for the 10-year vision.
-
----
-
-Built by 刘泓孝, a human who defines the rules AI must follow.
-
-```
+pip install -r requirements.txt  # (If you don't have this, just pip install paho-mqtt)
+ 
+2. Pull the Local Brain
+ollama run qwen2.5:7b
+ 
+3. Run the Sovereign Core
+python ai_mqtt_controller.py
+ 
+(The system will start simulating physical data, generating AI decisions, and recording embodied training data automatically.)
+ 
+4. Generate Analytics Report
+python analyze_log.py
+ 
+ 
+🗺️ Roadmap
+[x] v0.1 (Current): Offline LLM integration, physical action simulation, and automated data logging.
+[ ] v0.2: Real MQTT hardware integration (Raspberry Pi / Smart Home).
+[ ] v0.3: Multi-modal input (Vision + Audio).
+[ ] v0.4: Decentralized identity and tokenized decision assets. 
+ 
+🤝 Contact & Consulting
+ 
+I help organizations achieve AI Sovereignty and build privacy-first embodied AI pipelines.
+• Open for Collaboration / Hiring / Consulting.
+• Reach out via GitHub Issues or Email: [hongxiao-liu@outlook.com]
